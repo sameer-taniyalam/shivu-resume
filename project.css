@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.role {
+  font-size: 14px;
+  color: gray;
+  margin-left: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 16px;
+}
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+.projects-container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.project-text {
+    width: 50%;
+}
+
+.project-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.project-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.project-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-image img {
+    width: 200px; /* Placeholder size */
+    height: 200px;
+    background-color: #4112af;
+    border-radius: 10px;
+    border-color:crimson;
+    border-width: 100px;
+}
+/* Footer */
+
+  
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Keeps elements responsive on smaller screens */
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social-link {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-link i {
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  color: #888;
+}
+/* Mobile Optimization */
+@media (max-width: 992px) {
+  /* Reduce font sizes */
+  body {
+      font-size: 14px;
+  }
+
+  .logo {
+      font-size: 16px;
+  }
+
+  .role {
+      font-size: 12px;
+  }
+
+  /* Hide default navigation and add a responsive mobile menu */
+  nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      z-index: 1000;
+  }
+
+  nav a {
+      display: block;
+      padding: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    text-align: center;
+}
+
+  /* Show menu when active */
+  .mobile-menu-active nav {
+      display: flex;
+  }
+
+  /* Hamburger menu */
+  .hamburger {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+  }
+
+  /* Adjust project section for better mobile layout */
+  .projects-container {
+      width: 90%;
+      padding: 20px 0;
+  }
+
+  .project {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .project-text {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .project-image {
+      width: 100%;
+  }
+
+  .project-image img {
+      width: 80px;
+      height: 80px;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      margin-bottom: 10px;
+  }
+}
+/* Desktop view - Show original nav bar, hide hamburger */
+@media (min-width: 1025px) {
+  .nav-links {
+      display: flex; /* Show original nav */
+  }
+
+  .hamburger {
+      display: none; /* Hide hamburger menu */
+  }
+}
+

@@ -1,0 +1,365 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.role {
+  font-size: 14px;
+  color: gray;
+  margin-left: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 16px;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 5%;
+  gap: 50px;
+}
+
+/* Circular Profile Pic */
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Hero Text */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Circle Buttons */
+.circle-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.circle-button:hover {
+  transform: scale(1.05);
+  color: #42C2C7;
+}
+
+.resume-btn {
+  background-color: #F9D74C; /* Golden-ish */
+}
+
+.projects-btn {
+  background-color: #EB596E; /* Pinkish-Red */
+}
+
+.contact-btn {
+  background-color: #42C2C7; /* Teal-ish */
+}
+
+/* Content Sections */
+.content-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 5%;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+/* Footer Styling */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Keeps elements responsive on smaller screens */
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social-link {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-link i {
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  color: #888;
+}
+.hamburger {
+  display: none; /* Hide hamburger menu */
+}
+@media (max-width: 992px) {
+    /* Reduce font sizes for better readability */
+     /* Align profile image and text in column layout */
+     .hero {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px; /* Reduce gap for better spacing */
+  }
+
+  .profile-pic {
+      width: 300px; /* Reduce image size */
+      height: 300px;
+  }
+
+  .hero-text h1 {
+      font-size: 4rem;
+  }
+
+  .hero-text h2 {
+      font-size: 3rem;
+  }
+
+  .hero-text p {
+      font-size: 2rem;
+      padding: 0 10px; /* Add padding for better readability */
+  }
+    body {
+        font-size: 100%;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .role {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 35px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Show menu when active */
+  
+    .mobile-menu-active nav {
+        display: flex;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    .circle-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+
+  .circle-button {
+      width: 150px; /* Adjust size for mobile */
+      height: 150px;
+      font-size: 30px; /* Reduce font size */
+  }
+
+    /* Adjust main content layout */
+    main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-menu-active main {
+      margin-top: 150px;
+  }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+    }
+
+    .name-fields,
+    .email-subject {
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        font-size: 90%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .site-footer {
+      padding: 20px;
+      font-size: 5rem;
+      
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      padding: 20px 0;
+  }
+
+  .footer-section {
+      margin-bottom: 30px;
+  }
+  .footer-section h4{
+    font-size: 100%;
+}
+  .footer-section p{
+    font-size: 140%;
+}
+
+/* 🔹 Increase Social Media Icon Size in Footer */
+.footer-section .social-link {
+  font-size: 50px; /* Increase icon size */
+  margin: 0 10px; /* Add spacing between icons */
+ 
+}
+
+
+@media (min-width: 1025px) {
+    .nav-links {
+        display: flex; /* Show original nav */
+    }
+  
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+    }
+  }
+}
+
+

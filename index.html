@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Page</title>
+  <!-- Font (optional, for a clean modern look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+        <span class="dot"></span>
+        <a href="#"><span class="name">SHIVUKUMAR</span></a><span class="role">SHIVUKUMAR</span>
+        <div class="hamburger">&#9776;</div>
+
+        </div>
+    </div>
+    <nav>
+        <a href="./resume.html">Resume</a>
+        <a href="./project.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+</header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <!-- Big Circular Profile Picture -->
+      <div class="profile-pic">
+        <!-- Replace 'your-photo.jpg' with your own image path -->
+        <img src="./shivu.jpg" alt="Profile Picture" />
+      </div>
+
+      <!-- Text Next to the Photo -->
+      <div class="hero-text">
+        <h1>Hello</h1>
+        <h2>A Bit About Me</h2>
+        <p>
+          Hi My name is SHIVUKUMAR
+          . i will be completing diploma in cse in the year 
+          2025.
+
+        <!-- Circular Buttons -->
+        <div class="circle-buttons">
+          <a href="./resume.html" class="circle-button resume-btn">Resume</a>
+          <a href="./project.html" class="circle-button projects-btn">Projects</a>
+          <a href="./contact.html" class="circle-button contact-btn">Contact</a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Phone</h4>
+          <p>8722951522
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Email</h4>
+          <p>angadishivukumar0@gmail.com</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <!-- Replace # with actual URLs -->
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2025 SHIVUKUMAR
+          <br>Powered by SHIVUKUMAR
+        </p>
+      </div>
+       
+      
+    </footer>
+    <script>
+      document.querySelector('.hamburger').addEventListener('click', function() {
+          document.body.classList.toggle('mobile-menu-active');
+      });
+  </script>
+   
+
+
+  </main>
+</body>
+</html>
